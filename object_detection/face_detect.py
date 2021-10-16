@@ -4,6 +4,7 @@ face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 )
 
+
 def detect_face(img):
     face_img = img.copy()
 
@@ -33,7 +34,7 @@ while True:
     cv2.imshow('Video face Detect', frame)
 
     k = cv2.waitKey(1)
-    if k == 27:  # if press Esc stop recording
+    if k == 27:  # Esc
         break
 
 
